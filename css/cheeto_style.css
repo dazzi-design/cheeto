@@ -1,0 +1,492 @@
+/* cheeto_style.css */
+/* style.css - cheeto, */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {text-decoration: none;}
+ul { list-style-type: none;}
+
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    min-width: 1200px;
+    color: #333;
+}
+
+.header_wrap {
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+#main_header {
+    width:1200px;
+    height: 144px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#main_header > h1 {
+    position: absolute;
+    left: 0; top: 48px;
+    font-size: 44px;
+}
+#gnb {
+    position: absolute;
+    right: 0;
+    top: 62px;
+    font-size: 20px;
+}
+#gnb > ul > li {
+    display: inline-block;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+#gnb > ul > li:nth-child(7) {
+    margin-left: 100px;
+}
+#gnb > ul > li:last-child {margin-right: 0;}
+
+#gnb a {
+    color: black;
+    text-transform: uppercase;
+}
+
+
+/* 비주얼 */
+#visual {
+    position: relative;
+    height: 736px;
+    overflow: hidden;
+    /* outline: 1px solid green; */
+}
+
+#visual > .img {
+    position: absolute;
+    left: 0; top: 0;
+    width: 1964px;
+    height: 736px;
+    left: 50%;
+    margin-left: -982px;
+    
+}
+
+/* #img_wrap > h1 {
+    position: absolute; 
+    bottom: 100px;
+    left: 20%;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 4px 4px 4px #333;
+} */
+
+/* 메뉴헤더 */
+#menu_header {
+    /* width: 100%; */
+    height: 176px;
+    background: #f9f9f9;
+    
+}
+#menu_wrap {
+    width: 1200px; 
+    margin: 0 auto;
+    line-height: 176px;
+}
+
+#menu_wrap  > .menu-title {
+    float: left;
+    font-size: 20px;
+    /* outline: 1px solid purple; */
+    
+}
+
+#menu_wrap  > .menu-nav{
+    float: right;
+    right: 0;
+}
+
+.menu-nav > ul > li {
+    display: inline-block;
+    
+}
+.menu-nav > ul > li > a {
+    color: black;
+    margin: 30px;
+}
+.menu-nav > ul > li > button {
+    width: 160px;
+    height: 40px;
+    margin: 40px;
+    color: #fff;
+    background: #ff7868;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+/* *** 헤더 공통 클레스 *** */
+.line {
+    width: 8px;
+    height: 20px;
+    border-left: 8px solid #ff7868;
+    padding-right: 5px;
+}
+
+
+/* 메뉴 */
+#menu {
+    width: 1200px;
+    height: 880px;
+    /* outline: 1px solid red; */
+    padding-top: 68px;
+    margin: 0 auto;
+    color: #727272;
+    font-size: 20px;
+    /* position: relative; */
+}
+
+#menu > ul li {
+    position: relative;
+    /* outline: 1px solid green; */
+    width: 285px;
+    height: 427px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 0;
+    text-align: left;
+}
+#menu > ul li:last-child {
+    margin-right: 0;
+}
+#menu ul li:nth-child(4n) { margin-right: 0; }
+
+#menu ul li p {
+    padding-top: 20px;
+}
+#menu ul li p:last-child {
+    padding-top: 9px;
+    color: #ff7868;
+}
+
+/* 이벤트 */
+#event {
+    height: 580px;
+    /* outline: 1px solid orange; */
+    position: relative;
+    overflow: hidden;
+    clear: both;
+}
+
+.event-bg > img{
+    position: absolute;
+    left: 0;top: 0;
+    width: 1964px;
+    height: 580px;
+    left: 50%;
+    margin-left: -982px;    
+}
+#event-box-wrap{
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 580px;
+    /* outline: 1px solid red; */
+    /* overflow: hidden; */
+}
+.event-box {
+    position: absolute;
+    background: #fff;
+    width: 636px;
+    height: 380px;
+    text-align: center;
+    /* outline: 1px solid green; */
+    padding-top: 60px;
+    margin-top: 100px;
+    margin-left: 50%;
+    left: -320px;   /*얼추 사이즈 맞춤*/
+
+    /* 이 거 가 운 데 정 렬 못 하 겠 음 */
+
+}
+.event-title {
+    padding-bottom: 30px;
+}
+.event-box > h1 {
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+.event-box > p > .red {
+    color: red;
+    font-weight: bold;
+}
+.event-box > p > .orange {
+    color: orange;
+    font-weight: bold;
+}
+.event-box > p > .blue {
+    color: blue;
+    font-weight: bold;
+}
+.event-box > p > .under_blue {
+    text-decoration: underline;
+}
+.event-box > button {
+    margin-top: 30px;
+    width: 148px;
+    height: 50px;
+    background: #ff7868;
+    border: none;
+}
+.event-box > button > a{
+    color: #fff;
+    font-size: 18px;
+}
+
+/* 블로그 헤더 */
+#blog_header {
+    /* width: 100%; */
+    height: 176px;
+    background: #f9f9f9;
+}
+#blog_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 176px;
+    position: relative;
+    height: 176px;
+    /* outline: 1px solid red; */
+}
+
+#blog_wrap > .blog-title {
+    float: left;
+    font-size: 20px;
+}
+
+#blog_wrap > .blog-nav {
+    float: right;
+    right: 0;
+}
+.blog-nav > ul > li {
+    display: inline-block;
+}
+.blog-nav > ul > li >button {
+    margin-right: 44px;
+    width: 40px;
+    height: 40px;
+}
+.blog-nav > ul > li:last-child > button {
+    margin-right: 0;
+}
+
+/* 블로그 */
+#blog {
+    width: 1200px;
+    height: 445px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+}
+#blog > .blog-left {
+    float: left;
+    width: 590px;
+    height: 445px;
+    /* outline: 1px solid blue; */
+    margin-right: 20px;
+}
+#blog > .blog-right {
+    float: right;
+    width: 590px;
+    height: 445px;
+    /* outline: 1px solid blue; */
+}
+#blog > .blog-left > img, #blog > .blog-right > img {
+    width: 590px;
+    height: 307px;
+} 
+#blog > div > h2 {
+    padding-top: 30px;
+    font-size: 30px;
+}
+#blog > div > .address {
+    padding-top: 26px;
+    font-size: 16px;
+}
+#blog > div >.number {
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+/* 푸터인포 */
+#footer_info {
+    /* outline: 1px solid brown; */
+    height: 416px;
+    background: #f9f9f9;
+    margin-top: 20px;
+}
+
+#info_wrap {
+    /* outline: 1px solid red; */
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 416px;
+}
+/* 푸터인포 - CEO */
+.ceo {
+    position: absolute;
+    width: 489px;
+    height: 100%;
+    /* outline: 1px solid green; */
+    padding: 4px;
+    /* float: left; */
+}
+
+.man {
+    float: left;
+    margin-left: 20px;
+}
+.sign {
+    float: right;
+    margin-right: 20px;
+}
+
+
+.ceo > h1 {
+    padding-top: 48px;
+    padding-bottom: 32px;
+    font-size: 44px;
+    padding-left: 28px;
+}
+.ceo > p {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+/* 푸터인포 - 주소 */
+.company-address {
+    /* outline: 1px solid green; */
+    position: absolute;
+    width: 286px;
+    height: 100%;
+    left: 489px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.company-address > h2 {
+    padding-top: 70px;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+.company-address > p {
+    padding-bottom: 45px;
+}
+.icon-box > img {
+    float: left;
+    padding-right: 54px;
+    padding-left: 10px;
+}
+.phone {
+    padding-bottom: 63px;
+}
+
+/* 푸터인포 - 에약 */
+.reservation {
+    /* outline: 1px solid green; */
+    float: right;
+    width: 387px;
+    height: 100%;
+    position: relative;
+}
+.reservation > h2 {
+    padding-top: 70px;
+    font-size: 18px;
+    padding-bottom: 44px;
+}
+.reservation > p {
+    padding-bottom: 26px;
+}
+.reservation > input {
+    width: 306px;
+    height: 50px;
+    font-size: 18px;
+    border: 1px solid #959595;
+    float: left;
+}
+input::placeholder {
+    color: #ccc;
+}
+.reservation > button {
+    width: 81px;
+    height: 50px;
+    font-size: 18px;
+    background: #959595;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.reservation > .membership-title {
+    /* outline: 1px solid red; */
+    padding-top: 53px;
+}
+.membership {
+    position: absolute;
+    /* outline: 1px solid #ccc; */
+    width: 387px;
+    height: 88px;
+    bottom: 20px;
+    overflow: hidden;
+}
+.membership a img {
+    /* outline: 1px solid pink; */
+    width: 170px;
+    height: 40px;
+    margin: 3px;
+}
+
+
+/* 푸터 */
+#footer {
+    margin: 0 auto;
+    /* outline: 1px solid yellow; */
+    width: 1200px;
+    height: 94px;
+    position: relative;
+}
+#footer > .footer_left {
+    width: 590px;
+    height: 100%;
+    float: left;
+}
+.footer_left > p {
+    font-size: 18px;
+    padding-top: 37px;
+    float: left;
+    padding-right: 10px;
+}
+.footer_left a img{
+    line-height: 94px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 26px;
+    /* outline: 1px solid red; */
+}
+#footer > .footer_right {
+    /* outline: 1px solid red; */
+    position: absolute;
+    width: 285px;
+    height: 100%;
+    float: right;
+    right: 0;
+}
+#footer > .footer_right > ul li {
+    display: inline-block;
+    color: #666;
+    font-size: 18px;
+    line-height: 94px;
+}
+#footer > .footer_right > ul li > a {
+    color: #666;
+}
+
+
