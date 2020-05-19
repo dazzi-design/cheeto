@@ -50,6 +50,10 @@ body {
 #gnb a {
     color: black;
     text-transform: uppercase;
+    padding: 3px;
+}
+#gnb a:hover {
+    border-bottom: 3px solid #ff7868;
 }
 
 
@@ -122,6 +126,34 @@ body {
     border: none;
     border-radius: 10px;
     box-shadow: 2px 2px 2px #ccc;
+}
+.menu-nav > ul > li > button:hover {
+    background: orange;
+    transition-duration: 0.5s;
+}
+/* 팝업창 */
+.pop-up {
+    width: 500px; height: 500px;
+    background: #ff7868;
+    opacity: 0.99;
+    position: fixed;
+    left: 35%; top: 200px;
+    padding: 20px;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.637);
+    text-align: center;
+}
+
+.pop-up .btn-xbox {
+    float: right;
+    width: 18px;
+    height: 20px;
+    border-radius: 5px;
+    color: #ff7868;
+    font-weight: bolder;
+    
+
 }
 
 /* *** 헤더 공통 클레스 *** */
@@ -490,3 +522,64 @@ input::placeholder {
 }
 
 
+/* 서브페이지 */
+#book {
+    width: 1200px;
+    height: 1200px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+    text-align: center;
+    background-image: url('../images/ingredients-illust.jpg');
+}
+
+#book h1 {
+    padding-top: 216px;
+    padding-bottom: 123px;
+    font-size: 72px;
+    font-weight: bolder;
+}
+
+#video-wrap {
+    width: 1200px;
+    /* outline: 1px solid blue; */
+    margin: 0 auto;
+}
+
+#table {
+    font-size: 48px;
+}
+
+#table input[type="date"] {
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+}
+
+#table input[type="time"] {
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+}
+#table p {
+    font-weight: bold;
+}
+
+#table input[type="number"] {
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+}
+
+#btn-reservation {
+    margin-top: 40px;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #000;
+}
+#btn-reservation:hover {
+    background: orange;
+    border: none;
+    color: #fff;
+}
