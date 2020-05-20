@@ -13,6 +13,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- 사용자 자바스크립트 -->
     <script src="./js/cheeto.js"></script>
+    <!-- bxslider cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 
 <body>
@@ -59,7 +62,9 @@
                     <li><a href="#">Main-dishes</a></li>
                     <li><a href="#">Dessert</a></li>
                     <li><a href="#">Drink</a></li>
-                    <li><button id="btn-choice"><h3>cheese-choice?</h3></button></li>
+                    <li><button id="btn-choice">
+                            <h3>cheese-choice?</h3>
+                        </button></li>
                 </ul>
             </div>
         </div>
@@ -133,40 +138,20 @@
                 <span class="line"></span>
                 From Our Blog
             </div>
-
-            <div class="blog-nav">
-                <ul>
-                    <!-- 버튼 아이콘 추가할것 -->
-                    <li>
-                        <button>
-                            <img src="./images/left-icon.png" alt="left-icon">
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            <img src="./images/right-icon.png" alt="right-icon">
-                        </button>
-                    </li>
-                </ul>
-            </div>
         </div>
     </section>
 
     <!-- blog -->
     <section id="blog">
-        <div class="blog-left">
-            <img src="./images/b-left.jpg" alt="b-left">
-            <h2>신촌점</h2>
-            <p class="address">서울특별시 서대문구 신촌동 23</p>
-            <p class="number">연락처 : 02 - 2602 - 1234</p>
+        <!-- 블로그 bxslider -->
+        <div id="slider">
+            <ul class="bxslider">
+                <li><a href="#"><img src="./images/blog_slider01.jpg" alt="" title="이미지1"></a></li>
+                <li><a href="#"><img src="./images/blog_slider02.jpg" alt="" title="이미지2"></a></li>
+                <li><a href="#"><img src="./images/blog_slider03.jpg" alt="" title="이미지3"></a></li>
+            </ul>
         </div>
 
-        <div class="blog-right">
-            <img src="./images/b-right.jpg" alt="b-right">
-            <h2>서초점</h2>
-            <p class="address">서울특별시 서초구 서초동 1234-7</p>
-            <p class="number">연락처 : 02 - 2647 - 2501</p>
-        </div>
     </section>
 
 
@@ -207,7 +192,7 @@
                 <h2>RESERVATION</h2>
                 <p>예약하실 매장명을 검색해주세요.</p>
                 <input type="text" name="매장명" placeholder=" ex) 목동점">
-                <button>매장검색</button>
+                <button><a href="#">매장검색</a></button>
                 <p class="membership-title">할인카드 및 맴버쉽</p>
                 <div class="membership">
                     <a href="#"><img src="./images/hanask.png" alt="하나카드"></a>
@@ -241,53 +226,26 @@
     </section>
 
     <div class="pop-up">
-        <!-- <h1>Esadasdasdas</h1>
-        <p>닫기버튼 만들고 hide로 해주면됨</p><br> -->
         <button class="btn-xbox">X</button>
-        <h1>cheese-choice?</h1>
-        <br>
-        <p>전 메뉴에 고객님께서 원하시는 치즈 종류를 선택하실수 있습니다.</p><br>
-                                <hr>
-                                <br>
-                                <h3>● SEMI-HARD</h3>
-                                <br>
-                                <p>
-                                    1) cheddar<br>
-                                    2) swiss<br>
-                                    3)gouda<br>
-                                </p>
-                                <br>
-                                <h3>● SEMI-SOFT</h3>
-                                <br>
-                                <p>
-                                    1)brick<br>
-                                    2)feta<br>
-                                    3)chevre<br>
-                                </p>
-                                <br>
-                                <h3>● SOFT</h3>
-                                <br>
-                                <p>
-                                    1)mozzarella<br>
-                                    2)brie
-                                </p>
-                                <br>
-
     </div>
-    <!-- <script>
-        $(function(){
-            // 초기화
-            $('.pop-up').hide();
-            // 버튼 클릭시 보이게함
-            $('#btn-choice').click(function(){
-            $('.pop-up').show();
-            // x버튼 클릭시 닫기
-            $('.btn-xbox').click(function(){
-            $('.pop-up').hide();    
-            })    
-            })
+
+    <div id="top">
+        <button><a href="#">TOP</a></button>
+    </div>
+   
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({
+                auto: true, // 자동으로 애니메이션 시작
+                speed: 500,  // 애니메이션 속도
+                pause: 5000,  // 애니메이션 유지 시간 (1000은 1초)
+                mode: 'horizontal', // 슬라이드 모드 ('fade', 'horizontal', 'vertical' 이 있음)
+                autoControls: true, // 시작 및 중지버튼 보여짐
+                pager: true, // 페이지 표시 보여짐
+
+            });
         });
-    </script> -->
+    </script>
 </body>
 
 </html>
